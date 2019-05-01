@@ -1,0 +1,14 @@
+{
+  "name": "flexagrips",
+  "version": "1.0.0",
+  "description": "Flexa Gym Grips",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Radina Garfinkel",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1"
+  }
+}

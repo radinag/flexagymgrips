@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	background-color: #f7f7f2;
+}
+
+.navbar-nav .nav-item {
+	font: #000;
+	padding-right: 1.2rem;
+	padding-left: 1.2rem;
+	font-size: 1rem;
+	transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover {
+	text-decoration: overline;
+	transform: scale(1.1);
+}
+
+.navbar-brand img {
+	width: 75%;
+}
+
+.jumbotron {
+	background-image: url('../images/banner_gym.jpg');
+	height: 60%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-filter: sepia(40%);
+    filter: sepia(40%);
+    overflow: hidden;
+}
+
+.jumbotron h1 {
+	font-size: 3.5rem;
+	font-weight: 600;
+	color: rgb(60, 60, 60);
+	display: flex;
+	justify-content: center;
+    align-items: center;    
+}
+.jumbotron .container {
+	margin-top: 3rem;
+}
+
+.jumbotron .btn {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: rgb(60, 60, 60);
+	border-radius: 10px;	
+}
+
+/* Composition Photo */
+
+.container_about {
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+.about_grips h3 {
+	color: rgb(60, 60, 60);
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+
+.about_grips p {
+	font-size: 1.1rem;
+	letter-spacing: 0.3;
+	color: #868585;
+}
+
+.about_grips .btn {
+	font-size: 1rem;
+	border-radius: 10px;
+	border: none;
+	transition: all 0.3s ease;
+}
+
+.about_grips .btn:hover {
+	color: #fff;
+	border: none;
+	transform: scale(1.1) translateY(-0.5rem);
+}
+
+.composition {
+	position: relative;
+}
+
+.composition__photo {
+	width: 40%;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+	border-radius: 1px;
+	position: absolute;
+	z-index: 10;
+	outline-offset: 1rem;
+	transition: all 0.2s;
+	justify-content: center;
+}
+
+.composition__photo--p1 {
+	height: auto;
+	left: 5rem;
+	top: 6rem;
+}
+
+.composition__photo--p2 {
+	height: auto;
+	right: 3rem;
+	top: 2rem;
+}
+
+.composition__photo--p3 {
+	height: auto;
+	right: 25%;
+	top: 11rem;
+}
+
+.composition__photo:hover {
+	outline: 0.7rem solid #ffbc04;
+	transform: scale(1.2) translateY(-0.5rem);
+	box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+	z-index: 20;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+	transform: scale(0.8);
+}
+
+/* End of Composition Photo */
+
+/*  Container Mission */
+.container_mission {
+	background-color: #ffffff;
+	margin-top: 4rem;
+	padding-top: 3rem !important;
+	padding-bottom: 2rem;
+}
+
+.container_mission h2 {
+	color: rgb(60, 60, 60);
+	text-transform: uppercase;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.container_mission p {
+	font-size: 1rem;
+	letter-spacing: 2.5;
+	color: #868585;
+}
+
+.container_mission a {
+	color: #ffbc04;
+	padding: 1px;
+	transition: all 0.2s;
+}
+
+.container_mission a:hover {
+	text-decoration: none;
+	background-color: #ffc107;
+	color: rgb(60, 60, 60);
+	border-radius: 10px;
+	padding: 5px 5px;
+	box-shadow: 0 1rem 2rem rgbs(#000, 0.15);
+	transform: translateY(-2px);
+}
+
+/*  End of Container Mission */
+
+/* Container Cards */
+#cards {
+	color: rgb(60, 60, 60);
+	font-size: 2rem;
+	font-weight: bold;
+	padding-top: 0;
+}
+
+.card-features {
+	color: rgb(60, 60, 60);
+	font-size: 1rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin-top: -1.5rem;
+}
+
+.list-group-item {
+	font-size: 1rem;
+	color: #868585;
+	text-align: center;
+}
+
+.card-img-top {
+	-webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+	-webkit-filter: sepia(40%);
+	filter: sepia(40%);
+}
+
+.card {
+	box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.3);
+	-webkit-transition: 0.3s ease;
+	transition: 0.3s ease;
+}
+
+.card:hover {
+	-webkit-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+/* End of Container Cards */
+
+/* Container Fitness Routine */
+.container_routine {
+	background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.76), rgba(228, 163, 0, 0.377)),
+		url('../images/gym11.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+#routine {
+	color: rgb(60, 60, 60);
+	font-size: 2rem;
+	font-weight: bold;
+	padding-top: 0;
+}
+
+.card-body h5 {
+	font-size: 1.2rem;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.card-body p {
+	font-size: 1rem;
+	letter-spacing: 2.5;
+	color: #535252;
+}
+
+.container_routine .card {
+	background-color: rgba(255, 255, 255, 0.775);
+}
+
+.container_routine a {
+	color: #ffc107;
+	padding: 3px;
+	transition: all 0.2s ease;
+}
+
+.container_routine a:hover {
+	text-decoration: none;
+	background-color: #ffc107;
+	color: rgb(60, 60, 60);
+	border-radius: 10px;
+	padding: 5px 5px;
+	box-shadow: 0 1rem 2rem rgbs(#000, 0.15);
+	transform: translateY(-2px);
+}
+
+/* End of Fitness Routine */
+
+/* Container Contact */
+.container_contact p {
+	font-size: 1rem;
+	font-weight: 500;
+	color: #535252;
+	margin-bottom: 0.5rem;
+}
+
+.contact_email {
+	color: #535252;
+}
+
+.contact_email:hover {
+	text-decoration: none;
+	color: #ffc107;
+}
+
+/* End of Container Contact */
+
+/* Footer */
+.nav_socialmedia .nav-item i {
+	font-size: 2rem;
+	color: #ffc107;
+}
+
+.nav_socialmedia .nav-item i:hover {
+	font-size: 2rem;
+	background-color: #ffc107;
+	color: #fff;
+}
+
+/* End of Footer */
+
+/*---Media Queries --*/
+@media only screen and (max-width: 61.88em) {
+	.composition__photo:hover {
+		outline: none;
+		transform: scale(1.1) translateY(-0.5rem);
+		box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+		z-index: 20;
+	}
+
+	.composition__photo {
+		float: left;
+		position: relative;
+		width: 32%;
+		box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+	}
+
+	.composition__photo--p1 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+	}
+
+	.composition__photo--p2 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+		z-index: 100;
+	}
+
+	.composition__photo--p3 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+	}
+}
+
+@media only screen and (max-width: 56.25em) {
+	.composition__photo {
+		float: left;
+		position: relative;
+		width: 32%;
+		box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+	}
+
+	.composition__photo--p1 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+	}
+
+	.composition__photo--p2 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+		z-index: 100;
+	}
+
+	.composition__photo--p3 {
+		top: 1rem;
+		left: 1rem;
+		transform: scale(0.8);
+	}
+}
+
+@media only screen and (max-width: 61.88em) {
+	.jumbotron {
+		height: 50%;
+	}
+	.jumbotron h1 {
+		font-size: 3rem;
+	}
+
+	.jumbotron h3 {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 48em) {
+	.jumbotron h1 {
+		font-size: 2.5rem;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+	}
+
+	.jumbotron h3 {
+		font-size: 1.4rem;
+		color: rgb(0, 0, 0);
+	}
+}
+
+@media only screen and (max-width: 36em) {
+	.jumbotron {
+		height: 50%;
+	}
+
+	.jumbotron h1 {
+		font-size: 2rem;
+		text-align: center;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+		
+	}
+
+	.jumbotron h3 {
+		font-size: 1.2rem;
+		text-align: center;
+		color: rgb(0, 0, 0);
+	}
+
+	.jumbotron .btn {
+		font-size: 1rem;
+		border-radius: 10px;
+		border: none;
+		display: block;
+	}
+
+	.composition {
+		padding-left: 0 !important;
+	}
+}
+
+@media only screen and (max-width: 23.75em) {
+	.jumbotron .container {
+		margin-top: 1rem;
+	}
+	.jumbotron h1 {
+		font-size: 1.8rem;
+		color: rgb(0, 0, 0);
+		font-weight: bold;
+		
+	}
+
+	.jumbotron h3 {
+		font-size: 1rem;
+		font-weight: bold;
+		text-align: center;
+		color: rgb(0, 0, 0);
+	}
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*='col-'] {
+	padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
